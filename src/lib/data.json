@@ -1,0 +1,1448 @@
+{
+  "items": [
+    {
+      "id": "0",
+      "dayPart": "Breakfast",
+      "timeRange": "09:30 - 09:59",
+      "time": "09:30:00",
+      "days": {
+        "Sun": {
+          "sales": "Opening Shift",
+          "minRcmd": "2",
+          "nonSmooth": "2",
+          "rcmd": "2"
+        },
+        "Mon": {
+          "sales": "Opening Shift",
+          "minRcmd": "2",
+          "nonSmooth": "2",
+          "rcmd": "2"
+        },
+        "Tue": {
+          "sales": "Opening Shift",
+          "minRcmd": "2",
+          "nonSmooth": "2",
+          "rcmd": "2"
+        },
+        "Wed": {
+          "sales": "Opening Shift",
+          "minRcmd": "2",
+          "nonSmooth": "2",
+          "rcmd": "2"
+        },
+        "Thu": {
+          "sales": "Opening Shift",
+          "minRcmd": "2",
+          "nonSmooth": "2",
+          "rcmd": "2"
+        },
+        "Fri": {
+          "sales": "Opening Shift",
+          "minRcmd": "2",
+          "nonSmooth": "2",
+          "rcmd": "2"
+        },
+        "Sat": {
+          "sales": "Opening Shift",
+          "minRcmd": "2",
+          "nonSmooth": "2",
+          "rcmd": "2"
+        }
+      }
+    },
+    {
+      "id": "1",
+      "dayPart": "Breakfast",
+      "timeRange": "10:00 - 10:29",
+      "time": "10:00:00",
+      "days": {
+        "Sun": {
+          "sales": "$51",
+          "minRcmd": "2",
+          "nonSmooth": "3",
+          "rcmd": "3"
+        },
+        "Mon": {
+          "sales": "$85",
+          "minRcmd": "2",
+          "nonSmooth": "3",
+          "rcmd": "3"
+        },
+        "Tue": {
+          "sales": "$76",
+          "minRcmd": "2",
+          "nonSmooth": "3",
+          "rcmd": "3"
+        },
+        "Wed": {
+          "sales": "$102",
+          "minRcmd": "2",
+          "nonSmooth": "3",
+          "rcmd": "3"
+        },
+        "Thu": {
+          "sales": "$172",
+          "minRcmd": "3",
+          "nonSmooth": "4",
+          "rcmd": "4"
+        },
+        "Fri": {
+          "sales": "$112",
+          "minRcmd": "2",
+          "nonSmooth": "3",
+          "rcmd": "3"
+        },
+        "Sat": {
+          "sales": "$84",
+          "minRcmd": "2",
+          "nonSmooth": "3",
+          "rcmd": "3"
+        }
+      }
+    },
+    {
+      "id": "2",
+      "dayPart": "Breakfast",
+      "timeRange": "10:30 - 10:59",
+      "time": "10:30:00",
+      "days": {
+        "Sun": {
+          "sales": "$143",
+          "minRcmd": "2",
+          "nonSmooth": "3",
+          "rcmd": "3"
+        },
+        "Mon": {
+          "sales": "$143",
+          "minRcmd": "2",
+          "nonSmooth": "3",
+          "rcmd": "3"
+        },
+        "Tue": {
+          "sales": "$142",
+          "minRcmd": "2",
+          "nonSmooth": "3",
+          "rcmd": "3"
+        },
+        "Wed": {
+          "sales": "$98",
+          "minRcmd": "2",
+          "nonSmooth": "3",
+          "rcmd": "3"
+        },
+        "Thu": {
+          "sales": "$143",
+          "minRcmd": "2",
+          "nonSmooth": "3",
+          "rcmd": "3"
+        },
+        "Fri": {
+          "sales": "$178",
+          "minRcmd": "3",
+          "nonSmooth": "4",
+          "rcmd": "4"
+        },
+        "Sat": {
+          "sales": "$132",
+          "minRcmd": "2",
+          "nonSmooth": "3",
+          "rcmd": "3"
+        }
+      }
+    },
+    {
+      "id": "3",
+      "dayPart": "Lunch",
+      "timeRange": "11:00 - 11:29",
+      "time": "11:00:00",
+      "days": {
+        "Sun": {
+          "sales": "$213",
+          "minRcmd": "4",
+          "nonSmooth": "4",
+          "rcmd": "5"
+        },
+        "Mon": {
+          "sales": "$168",
+          "minRcmd": "4",
+          "nonSmooth": "4",
+          "rcmd": "5"
+        },
+        "Tue": {
+          "sales": "$228",
+          "minRcmd": "4",
+          "nonSmooth": "4",
+          "rcmd": "5"
+        },
+        "Wed": {
+          "sales": "$265",
+          "minRcmd": "5",
+          "nonSmooth": "5",
+          "rcmd": "6"
+        },
+        "Thu": {
+          "sales": "$216",
+          "minRcmd": "4",
+          "nonSmooth": "4",
+          "rcmd": "5"
+        },
+        "Fri": {
+          "sales": "$233",
+          "minRcmd": "4",
+          "nonSmooth": "4",
+          "rcmd": "5"
+        },
+        "Sat": {
+          "sales": "$219",
+          "minRcmd": "5",
+          "nonSmooth": "4",
+          "rcmd": "6"
+        }
+      }
+    },
+    {
+      "id": "4",
+      "dayPart": "Lunch",
+      "timeRange": "11:30 - 11:59",
+      "time": "11:30:00",
+      "days": {
+        "Sun": {
+          "sales": "$197",
+          "minRcmd": "4",
+          "nonSmooth": "4",
+          "rcmd": "5"
+        },
+        "Mon": {
+          "sales": "$226",
+          "minRcmd": "4",
+          "nonSmooth": "4",
+          "rcmd": "5"
+        },
+        "Tue": {
+          "sales": "$283",
+          "minRcmd": "4",
+          "nonSmooth": "5",
+          "rcmd": "5"
+        },
+        "Wed": {
+          "sales": "$419",
+          "minRcmd": "5",
+          "nonSmooth": "6",
+          "rcmd": "6"
+        },
+        "Thu": {
+          "sales": "$328",
+          "minRcmd": "4",
+          "nonSmooth": "5",
+          "rcmd": "5"
+        },
+        "Fri": {
+          "sales": "$260",
+          "minRcmd": "4",
+          "nonSmooth": "5",
+          "rcmd": "5"
+        },
+        "Sat": {
+          "sales": "$323",
+          "minRcmd": "5",
+          "nonSmooth": "5",
+          "rcmd": "6"
+        }
+      }
+    },
+    {
+      "id": "5",
+      "dayPart": "Lunch",
+      "timeRange": "12:00 - 12:29",
+      "time": "12:00:00",
+      "days": {
+        "Sun": {
+          "sales": "$245",
+          "minRcmd": "4",
+          "nonSmooth": "4",
+          "rcmd": "5"
+        },
+        "Mon": {
+          "sales": "$374",
+          "minRcmd": "4",
+          "nonSmooth": "6",
+          "rcmd": "5"
+        },
+        "Tue": {
+          "sales": "$446",
+          "minRcmd": "4",
+          "nonSmooth": "7",
+          "rcmd": "5"
+        },
+        "Wed": {
+          "sales": "$376",
+          "minRcmd": "5",
+          "nonSmooth": "6",
+          "rcmd": "6"
+        },
+        "Thu": {
+          "sales": "$420",
+          "minRcmd": "4",
+          "nonSmooth": "6",
+          "rcmd": "5"
+        },
+        "Fri": {
+          "sales": "$326",
+          "minRcmd": "4",
+          "nonSmooth": "5",
+          "rcmd": "5"
+        },
+        "Sat": {
+          "sales": "$405",
+          "minRcmd": "5",
+          "nonSmooth": "6",
+          "rcmd": "6"
+        }
+      }
+    },
+    {
+      "id": "6",
+      "dayPart": "Lunch",
+      "timeRange": "12:30 - 12:59",
+      "time": "12:30:00",
+      "days": {
+        "Sun": {
+          "sales": "$322",
+          "minRcmd": "4",
+          "nonSmooth": "5",
+          "rcmd": "5"
+        },
+        "Mon": {
+          "sales": "$307",
+          "minRcmd": "4",
+          "nonSmooth": "5",
+          "rcmd": "5"
+        },
+        "Tue": {
+          "sales": "$434",
+          "minRcmd": "4",
+          "nonSmooth": "7",
+          "rcmd": "5"
+        },
+        "Wed": {
+          "sales": "$400",
+          "minRcmd": "5",
+          "nonSmooth": "6",
+          "rcmd": "6"
+        },
+        "Thu": {
+          "sales": "$406",
+          "minRcmd": "4",
+          "nonSmooth": "6",
+          "rcmd": "5"
+        },
+        "Fri": {
+          "sales": "$363",
+          "minRcmd": "4",
+          "nonSmooth": "6",
+          "rcmd": "5"
+        },
+        "Sat": {
+          "sales": "$420",
+          "minRcmd": "5",
+          "nonSmooth": "6",
+          "rcmd": "6"
+        }
+      }
+    },
+    {
+      "id": "7",
+      "dayPart": "Lunch",
+      "timeRange": "13:00 - 13:29",
+      "time": "13:00:00",
+      "days": {
+        "Sun": {
+          "sales": "$322",
+          "minRcmd": "4",
+          "nonSmooth": "5",
+          "rcmd": "5"
+        },
+        "Mon": {
+          "sales": "$318",
+          "minRcmd": "4",
+          "nonSmooth": "5",
+          "rcmd": "5"
+        },
+        "Tue": {
+          "sales": "$309",
+          "minRcmd": "4",
+          "nonSmooth": "5",
+          "rcmd": "5"
+        },
+        "Wed": {
+          "sales": "$319",
+          "minRcmd": "5",
+          "nonSmooth": "5",
+          "rcmd": "6"
+        },
+        "Thu": {
+          "sales": "$391",
+          "minRcmd": "4",
+          "nonSmooth": "6",
+          "rcmd": "5"
+        },
+        "Fri": {
+          "sales": "$307",
+          "minRcmd": "4",
+          "nonSmooth": "5",
+          "rcmd": "5"
+        },
+        "Sat": {
+          "sales": "$379",
+          "minRcmd": "5",
+          "nonSmooth": "6",
+          "rcmd": "6"
+        }
+      }
+    },
+    {
+      "id": "8",
+      "dayPart": "Lunch",
+      "timeRange": "13:30 - 13:59",
+      "time": "13:30:00",
+      "days": {
+        "Sun": {
+          "sales": "$290",
+          "minRcmd": "4",
+          "nonSmooth": "5",
+          "rcmd": "5"
+        },
+        "Mon": {
+          "sales": "$309",
+          "minRcmd": "4",
+          "nonSmooth": "5",
+          "rcmd": "5"
+        },
+        "Tue": {
+          "sales": "$315",
+          "minRcmd": "4",
+          "nonSmooth": "5",
+          "rcmd": "5"
+        },
+        "Wed": {
+          "sales": "$294",
+          "minRcmd": "5",
+          "nonSmooth": "5",
+          "rcmd": "6"
+        },
+        "Thu": {
+          "sales": "$253",
+          "minRcmd": "4",
+          "nonSmooth": "5",
+          "rcmd": "5"
+        },
+        "Fri": {
+          "sales": "$293",
+          "minRcmd": "4",
+          "nonSmooth": "5",
+          "rcmd": "5"
+        },
+        "Sat": {
+          "sales": "$459",
+          "minRcmd": "5",
+          "nonSmooth": "7",
+          "rcmd": "6"
+        }
+      }
+    },
+    {
+      "id": "9",
+      "dayPart": "Afternoon",
+      "timeRange": "14:00 - 14:29",
+      "time": "14:00:00",
+      "days": {
+        "Sun": {
+          "sales": "$285",
+          "minRcmd": "4",
+          "nonSmooth": "5",
+          "rcmd": "5"
+        },
+        "Mon": {
+          "sales": "$280",
+          "minRcmd": "4",
+          "nonSmooth": "5",
+          "rcmd": "5"
+        },
+        "Tue": {
+          "sales": "$302",
+          "minRcmd": "5",
+          "nonSmooth": "5",
+          "rcmd": "6"
+        },
+        "Wed": {
+          "sales": "$276",
+          "minRcmd": "5",
+          "nonSmooth": "5",
+          "rcmd": "6"
+        },
+        "Thu": {
+          "sales": "$250",
+          "minRcmd": "5",
+          "nonSmooth": "5",
+          "rcmd": "6"
+        },
+        "Fri": {
+          "sales": "$256",
+          "minRcmd": "5",
+          "nonSmooth": "5",
+          "rcmd": "6"
+        },
+        "Sat": {
+          "sales": "$362",
+          "minRcmd": "5",
+          "nonSmooth": "6",
+          "rcmd": "6"
+        }
+      }
+    },
+    {
+      "id": "10",
+      "dayPart": "Afternoon",
+      "timeRange": "14:30 - 14:59",
+      "time": "14:30:00",
+      "days": {
+        "Sun": {
+          "sales": "$309",
+          "minRcmd": "4",
+          "nonSmooth": "5",
+          "rcmd": "5"
+        },
+        "Mon": {
+          "sales": "$247",
+          "minRcmd": "4",
+          "nonSmooth": "4",
+          "rcmd": "5"
+        },
+        "Tue": {
+          "sales": "$316",
+          "minRcmd": "5",
+          "nonSmooth": "5",
+          "rcmd": "6"
+        },
+        "Wed": {
+          "sales": "$349",
+          "minRcmd": "5",
+          "nonSmooth": "6",
+          "rcmd": "6"
+        },
+        "Thu": {
+          "sales": "$310",
+          "minRcmd": "5",
+          "nonSmooth": "5",
+          "rcmd": "6"
+        },
+        "Fri": {
+          "sales": "$363",
+          "minRcmd": "5",
+          "nonSmooth": "6",
+          "rcmd": "6"
+        },
+        "Sat": {
+          "sales": "$467",
+          "minRcmd": "5",
+          "nonSmooth": "7",
+          "rcmd": "6"
+        }
+      }
+    },
+    {
+      "id": "11",
+      "dayPart": "Afternoon",
+      "timeRange": "15:00 - 15:29",
+      "time": "15:00:00",
+      "days": {
+        "Sun": {
+          "sales": "$318",
+          "minRcmd": "4",
+          "nonSmooth": "5",
+          "rcmd": "5"
+        },
+        "Mon": {
+          "sales": "$237",
+          "minRcmd": "4",
+          "nonSmooth": "4",
+          "rcmd": "5"
+        },
+        "Tue": {
+          "sales": "$385",
+          "minRcmd": "5",
+          "nonSmooth": "6",
+          "rcmd": "6"
+        },
+        "Wed": {
+          "sales": "$344",
+          "minRcmd": "5",
+          "nonSmooth": "6",
+          "rcmd": "6"
+        },
+        "Thu": {
+          "sales": "$358",
+          "minRcmd": "5",
+          "nonSmooth": "6",
+          "rcmd": "6"
+        },
+        "Fri": {
+          "sales": "$323",
+          "minRcmd": "5",
+          "nonSmooth": "5",
+          "rcmd": "6"
+        },
+        "Sat": {
+          "sales": "$352",
+          "minRcmd": "5",
+          "nonSmooth": "6",
+          "rcmd": "6"
+        }
+      }
+    },
+    {
+      "id": "12",
+      "dayPart": "Afternoon",
+      "timeRange": "15:30 - 15:59",
+      "time": "15:30:00",
+      "days": {
+        "Sun": {
+          "sales": "$302",
+          "minRcmd": "4",
+          "nonSmooth": "5",
+          "rcmd": "5"
+        },
+        "Mon": {
+          "sales": "$282",
+          "minRcmd": "4",
+          "nonSmooth": "5",
+          "rcmd": "5"
+        },
+        "Tue": {
+          "sales": "$323",
+          "minRcmd": "5",
+          "nonSmooth": "5",
+          "rcmd": "6"
+        },
+        "Wed": {
+          "sales": "$302",
+          "minRcmd": "5",
+          "nonSmooth": "5",
+          "rcmd": "6"
+        },
+        "Thu": {
+          "sales": "$325",
+          "minRcmd": "5",
+          "nonSmooth": "5",
+          "rcmd": "6"
+        },
+        "Fri": {
+          "sales": "$270",
+          "minRcmd": "5",
+          "nonSmooth": "5",
+          "rcmd": "6"
+        },
+        "Sat": {
+          "sales": "$375",
+          "minRcmd": "5",
+          "nonSmooth": "6",
+          "rcmd": "6"
+        }
+      }
+    },
+    {
+      "id": "13",
+      "dayPart": "Afternoon",
+      "timeRange": "16:00 - 16:29",
+      "time": "16:00:00",
+      "days": {
+        "Sun": {
+          "sales": "$404",
+          "minRcmd": "4",
+          "nonSmooth": "6",
+          "rcmd": "5"
+        },
+        "Mon": {
+          "sales": "$302",
+          "minRcmd": "4",
+          "nonSmooth": "5",
+          "rcmd": "5"
+        },
+        "Tue": {
+          "sales": "$414",
+          "minRcmd": "5",
+          "nonSmooth": "6",
+          "rcmd": "6"
+        },
+        "Wed": {
+          "sales": "$419",
+          "minRcmd": "5",
+          "nonSmooth": "6",
+          "rcmd": "6"
+        },
+        "Thu": {
+          "sales": "$467",
+          "minRcmd": "5",
+          "nonSmooth": "7",
+          "rcmd": "6"
+        },
+        "Fri": {
+          "sales": "$385",
+          "minRcmd": "5",
+          "nonSmooth": "6",
+          "rcmd": "6"
+        },
+        "Sat": {
+          "sales": "$353",
+          "minRcmd": "5",
+          "nonSmooth": "6",
+          "rcmd": "6"
+        }
+      }
+    },
+    {
+      "id": "14",
+      "dayPart": "Afternoon",
+      "timeRange": "16:30 - 16:59",
+      "time": "16:30:00",
+      "days": {
+        "Sun": {
+          "sales": "$427",
+          "minRcmd": "4",
+          "nonSmooth": "6",
+          "rcmd": "5"
+        },
+        "Mon": {
+          "sales": "$287",
+          "minRcmd": "4",
+          "nonSmooth": "5",
+          "rcmd": "5"
+        },
+        "Tue": {
+          "sales": "$400",
+          "minRcmd": "5",
+          "nonSmooth": "6",
+          "rcmd": "6"
+        },
+        "Wed": {
+          "sales": "$399",
+          "minRcmd": "5",
+          "nonSmooth": "6",
+          "rcmd": "6"
+        },
+        "Thu": {
+          "sales": "$425",
+          "minRcmd": "5",
+          "nonSmooth": "6",
+          "rcmd": "6"
+        },
+        "Fri": {
+          "sales": "$587",
+          "minRcmd": "5",
+          "nonSmooth": "8",
+          "rcmd": "6"
+        },
+        "Sat": {
+          "sales": "$470",
+          "minRcmd": "5",
+          "nonSmooth": "7",
+          "rcmd": "6"
+        }
+      }
+    },
+    {
+      "id": "15",
+      "dayPart": "Dinner",
+      "timeRange": "17:00 - 17:29",
+      "time": "17:00:00",
+      "days": {
+        "Sun": {
+          "sales": "$476",
+          "minRcmd": "6",
+          "nonSmooth": "7",
+          "rcmd": "7"
+        },
+        "Mon": {
+          "sales": "$398",
+          "minRcmd": "5",
+          "nonSmooth": "6",
+          "rcmd": "6"
+        },
+        "Tue": {
+          "sales": "$575",
+          "minRcmd": "7",
+          "nonSmooth": "8",
+          "rcmd": "8"
+        },
+        "Wed": {
+          "sales": "$678",
+          "minRcmd": "7",
+          "nonSmooth": "9",
+          "rcmd": "8"
+        },
+        "Thu": {
+          "sales": "$577",
+          "minRcmd": "7",
+          "nonSmooth": "8",
+          "rcmd": "8"
+        },
+        "Fri": {
+          "sales": "$556",
+          "minRcmd": "7",
+          "nonSmooth": "8",
+          "rcmd": "8"
+        },
+        "Sat": {
+          "sales": "$423",
+          "minRcmd": "6",
+          "nonSmooth": "6",
+          "rcmd": "7"
+        }
+      }
+    },
+    {
+      "id": "16",
+      "dayPart": "Dinner",
+      "timeRange": "17:30 - 17:59",
+      "time": "17:30:00",
+      "days": {
+        "Sun": {
+          "sales": "$552",
+          "minRcmd": "6",
+          "nonSmooth": "8",
+          "rcmd": "7"
+        },
+        "Mon": {
+          "sales": "$449",
+          "minRcmd": "5",
+          "nonSmooth": "7",
+          "rcmd": "6"
+        },
+        "Tue": {
+          "sales": "$623",
+          "minRcmd": "7",
+          "nonSmooth": "9",
+          "rcmd": "8"
+        },
+        "Wed": {
+          "sales": "$619",
+          "minRcmd": "7",
+          "nonSmooth": "9",
+          "rcmd": "8"
+        },
+        "Thu": {
+          "sales": "$609",
+          "minRcmd": "7",
+          "nonSmooth": "8",
+          "rcmd": "8"
+        },
+        "Fri": {
+          "sales": "$533",
+          "minRcmd": "7",
+          "nonSmooth": "8",
+          "rcmd": "8"
+        },
+        "Sat": {
+          "sales": "$442",
+          "minRcmd": "6",
+          "nonSmooth": "7",
+          "rcmd": "7"
+        }
+      }
+    },
+    {
+      "id": "17",
+      "dayPart": "Dinner",
+      "timeRange": "18:00 - 18:29",
+      "time": "18:00:00",
+      "days": {
+        "Sun": {
+          "sales": "$480",
+          "minRcmd": "6",
+          "nonSmooth": "7",
+          "rcmd": "7"
+        },
+        "Mon": {
+          "sales": "$507",
+          "minRcmd": "5",
+          "nonSmooth": "7",
+          "rcmd": "6"
+        },
+        "Tue": {
+          "sales": "$605",
+          "minRcmd": "7",
+          "nonSmooth": "8",
+          "rcmd": "8"
+        },
+        "Wed": {
+          "sales": "$605",
+          "minRcmd": "7",
+          "nonSmooth": "8",
+          "rcmd": "8"
+        },
+        "Thu": {
+          "sales": "$523",
+          "minRcmd": "7",
+          "nonSmooth": "7",
+          "rcmd": "8"
+        },
+        "Fri": {
+          "sales": "$600",
+          "minRcmd": "7",
+          "nonSmooth": "8",
+          "rcmd": "8"
+        },
+        "Sat": {
+          "sales": "$546",
+          "minRcmd": "6",
+          "nonSmooth": "8",
+          "rcmd": "7"
+        }
+      }
+    },
+    {
+      "id": "18",
+      "dayPart": "Dinner",
+      "timeRange": "18:30 - 18:59",
+      "time": "18:30:00",
+      "days": {
+        "Sun": {
+          "sales": "$473",
+          "minRcmd": "6",
+          "nonSmooth": "7",
+          "rcmd": "7"
+        },
+        "Mon": {
+          "sales": "$453",
+          "minRcmd": "5",
+          "nonSmooth": "7",
+          "rcmd": "6"
+        },
+        "Tue": {
+          "sales": "$517",
+          "minRcmd": "7",
+          "nonSmooth": "7",
+          "rcmd": "8"
+        },
+        "Wed": {
+          "sales": "$660",
+          "minRcmd": "7",
+          "nonSmooth": "9",
+          "rcmd": "8"
+        },
+        "Thu": {
+          "sales": "$450",
+          "minRcmd": "7",
+          "nonSmooth": "7",
+          "rcmd": "8"
+        },
+        "Fri": {
+          "sales": "$648",
+          "minRcmd": "7",
+          "nonSmooth": "9",
+          "rcmd": "8"
+        },
+        "Sat": {
+          "sales": "$594",
+          "minRcmd": "6",
+          "nonSmooth": "8",
+          "rcmd": "7"
+        }
+      }
+    },
+    {
+      "id": "19",
+      "dayPart": "Dinner",
+      "timeRange": "19:00 - 19:29",
+      "time": "19:00:00",
+      "days": {
+        "Sun": {
+          "sales": "$388",
+          "minRcmd": "6",
+          "nonSmooth": "6",
+          "rcmd": "7"
+        },
+        "Mon": {
+          "sales": "$382",
+          "minRcmd": "5",
+          "nonSmooth": "6",
+          "rcmd": "6"
+        },
+        "Tue": {
+          "sales": "$573",
+          "minRcmd": "7",
+          "nonSmooth": "8",
+          "rcmd": "8"
+        },
+        "Wed": {
+          "sales": "$471",
+          "minRcmd": "7",
+          "nonSmooth": "7",
+          "rcmd": "8"
+        },
+        "Thu": {
+          "sales": "$562",
+          "minRcmd": "7",
+          "nonSmooth": "8",
+          "rcmd": "8"
+        },
+        "Fri": {
+          "sales": "$567",
+          "minRcmd": "7",
+          "nonSmooth": "8",
+          "rcmd": "8"
+        },
+        "Sat": {
+          "sales": "$478",
+          "minRcmd": "6",
+          "nonSmooth": "7",
+          "rcmd": "7"
+        }
+      }
+    },
+    {
+      "id": "20",
+      "dayPart": "Dinner",
+      "timeRange": "19:30 - 19:59",
+      "time": "19:30:00",
+      "days": {
+        "Sun": {
+          "sales": "$470",
+          "minRcmd": "6",
+          "nonSmooth": "7",
+          "rcmd": "7"
+        },
+        "Mon": {
+          "sales": "$345",
+          "minRcmd": "5",
+          "nonSmooth": "6",
+          "rcmd": "6"
+        },
+        "Tue": {
+          "sales": "$408",
+          "minRcmd": "7",
+          "nonSmooth": "6",
+          "rcmd": "8"
+        },
+        "Wed": {
+          "sales": "$503",
+          "minRcmd": "7",
+          "nonSmooth": "7",
+          "rcmd": "8"
+        },
+        "Thu": {
+          "sales": "$555",
+          "minRcmd": "7",
+          "nonSmooth": "8",
+          "rcmd": "8"
+        },
+        "Fri": {
+          "sales": "$525",
+          "minRcmd": "7",
+          "nonSmooth": "8",
+          "rcmd": "8"
+        },
+        "Sat": {
+          "sales": "$502",
+          "minRcmd": "6",
+          "nonSmooth": "7",
+          "rcmd": "7"
+        }
+      }
+    },
+    {
+      "id": "21",
+      "dayPart": "Evening",
+      "timeRange": "20:00 - 20:29",
+      "time": "20:00:00",
+      "days": {
+        "Sun": {
+          "sales": "$310",
+          "minRcmd": "4",
+          "nonSmooth": "5",
+          "rcmd": "5"
+        },
+        "Mon": {
+          "sales": "$318",
+          "minRcmd": "4",
+          "nonSmooth": "5",
+          "rcmd": "5"
+        },
+        "Tue": {
+          "sales": "$433",
+          "minRcmd": "6",
+          "nonSmooth": "7",
+          "rcmd": "7"
+        },
+        "Wed": {
+          "sales": "$424",
+          "minRcmd": "5",
+          "nonSmooth": "6",
+          "rcmd": "6"
+        },
+        "Thu": {
+          "sales": "$437",
+          "minRcmd": "6",
+          "nonSmooth": "7",
+          "rcmd": "7"
+        },
+        "Fri": {
+          "sales": "$414",
+          "minRcmd": "5",
+          "nonSmooth": "6",
+          "rcmd": "6"
+        },
+        "Sat": {
+          "sales": "$415",
+          "minRcmd": "5",
+          "nonSmooth": "6",
+          "rcmd": "6"
+        }
+      }
+    },
+    {
+      "id": "22",
+      "dayPart": "Evening",
+      "timeRange": "20:30 - 20:59",
+      "time": "20:30:00",
+      "days": {
+        "Sun": {
+          "sales": "$254",
+          "minRcmd": "4",
+          "nonSmooth": "5",
+          "rcmd": "5"
+        },
+        "Mon": {
+          "sales": "$269",
+          "minRcmd": "4",
+          "nonSmooth": "5",
+          "rcmd": "5"
+        },
+        "Tue": {
+          "sales": "$431",
+          "minRcmd": "5",
+          "nonSmooth": "6",
+          "rcmd": "6"
+        },
+        "Wed": {
+          "sales": "$325",
+          "minRcmd": "4",
+          "nonSmooth": "5",
+          "rcmd": "5"
+        },
+        "Thu": {
+          "sales": "$378",
+          "minRcmd": "5",
+          "nonSmooth": "6",
+          "rcmd": "6"
+        },
+        "Fri": {
+          "sales": "$305",
+          "minRcmd": "4",
+          "nonSmooth": "5",
+          "rcmd": "5"
+        },
+        "Sat": {
+          "sales": "$368",
+          "minRcmd": "5",
+          "nonSmooth": "6",
+          "rcmd": "6"
+        }
+      }
+    },
+    {
+      "id": "23",
+      "dayPart": "Evening",
+      "timeRange": "21:00 - 21:29",
+      "time": "21:00:00",
+      "days": {
+        "Sun": {
+          "sales": "$205",
+          "minRcmd": "3",
+          "nonSmooth": "4",
+          "rcmd": "4"
+        },
+        "Mon": {
+          "sales": "$216",
+          "minRcmd": "3",
+          "nonSmooth": "4",
+          "rcmd": "4"
+        },
+        "Tue": {
+          "sales": "$243",
+          "minRcmd": "3",
+          "nonSmooth": "4",
+          "rcmd": "4"
+        },
+        "Wed": {
+          "sales": "$176",
+          "minRcmd": "3",
+          "nonSmooth": "4",
+          "rcmd": "4"
+        },
+        "Thu": {
+          "sales": "$232",
+          "minRcmd": "3",
+          "nonSmooth": "4",
+          "rcmd": "4"
+        },
+        "Fri": {
+          "sales": "$338",
+          "minRcmd": "4",
+          "nonSmooth": "5",
+          "rcmd": "5"
+        },
+        "Sat": {
+          "sales": "$230",
+          "minRcmd": "3",
+          "nonSmooth": "4",
+          "rcmd": "4"
+        }
+      }
+    },
+    {
+      "id": "24",
+      "dayPart": "Evening",
+      "timeRange": "21:30 - 21:59",
+      "time": "21:30:00",
+      "days": {
+        "Sun": {
+          "sales": "$64",
+          "minRcmd": "3",
+          "nonSmooth": "4",
+          "rcmd": "4"
+        },
+        "Mon": {
+          "sales": "$96",
+          "minRcmd": "3",
+          "nonSmooth": "4",
+          "rcmd": "4"
+        },
+        "Tue": {
+          "sales": "$108",
+          "minRcmd": "3",
+          "nonSmooth": "4",
+          "rcmd": "4"
+        },
+        "Wed": {
+          "sales": "$64",
+          "minRcmd": "3",
+          "nonSmooth": "4",
+          "rcmd": "4"
+        },
+        "Thu": {
+          "sales": "$101",
+          "minRcmd": "3",
+          "nonSmooth": "4",
+          "rcmd": "4"
+        },
+        "Fri": {
+          "sales": "$147",
+          "minRcmd": "3",
+          "nonSmooth": "4",
+          "rcmd": "4"
+        },
+        "Sat": {
+          "sales": "$93",
+          "minRcmd": "3",
+          "nonSmooth": "4",
+          "rcmd": "4"
+        }
+      }
+    },
+    {
+      "id": "25",
+      "dayPart": "Evening",
+      "timeRange": "22:00 - 22:29",
+      "time": "22:00:00",
+      "days": {
+        "Sun": {
+          "sales": "Closing Shift",
+          "minRcmd": "4",
+          "nonSmooth": "4",
+          "rcmd": "4"
+        },
+        "Mon": {
+          "sales": "Closing Shift",
+          "minRcmd": "4",
+          "nonSmooth": "4",
+          "rcmd": "4"
+        },
+        "Tue": {
+          "sales": "Closing Shift",
+          "minRcmd": "4",
+          "nonSmooth": "4",
+          "rcmd": "4"
+        },
+        "Wed": {
+          "sales": "Closing Shift",
+          "minRcmd": "4",
+          "nonSmooth": "4",
+          "rcmd": "4"
+        },
+        "Thu": {
+          "sales": "Closing Shift",
+          "minRcmd": "4",
+          "nonSmooth": "4",
+          "rcmd": "4"
+        },
+        "Fri": {
+          "sales": "Closing Shift",
+          "minRcmd": "4",
+          "nonSmooth": "4",
+          "rcmd": "4"
+        },
+        "Sat": {
+          "sales": "Closing Shift",
+          "minRcmd": "4",
+          "nonSmooth": "4",
+          "rcmd": "4"
+        }
+      }
+    },
+    {
+      "id": "26",
+      "dayPart": "Evening",
+      "timeRange": "22:30 - 22:59",
+      "time": "22:30:00",
+      "days": {
+        "Sun": {
+          "sales": "Closing Shift",
+          "minRcmd": "4",
+          "nonSmooth": "4",
+          "rcmd": "4"
+        },
+        "Mon": {
+          "sales": "Closing Shift",
+          "minRcmd": "4",
+          "nonSmooth": "4",
+          "rcmd": "4"
+        },
+        "Tue": {
+          "sales": "Closing Shift",
+          "minRcmd": "4",
+          "nonSmooth": "4",
+          "rcmd": "4"
+        },
+        "Wed": {
+          "sales": "Closing Shift",
+          "minRcmd": "4",
+          "nonSmooth": "4",
+          "rcmd": "4"
+        },
+        "Thu": {
+          "sales": "Closing Shift",
+          "minRcmd": "4",
+          "nonSmooth": "4",
+          "rcmd": "4"
+        },
+        "Fri": {
+          "sales": "Closing Shift",
+          "minRcmd": "4",
+          "nonSmooth": "4",
+          "rcmd": "4"
+        },
+        "Sat": {
+          "sales": "Closing Shift",
+          "minRcmd": "4",
+          "nonSmooth": "4",
+          "rcmd": "4"
+        }
+      }
+    },
+    {
+      "id": "27",
+      "dayPart": "Evening",
+      "timeRange": "23:00 - 23:29",
+      "time": "23:00:00",
+      "days": {
+        "Sun": {
+          "sales": "Closing Shift",
+          "minRcmd": "4",
+          "nonSmooth": "4",
+          "rcmd": "4"
+        },
+        "Mon": {
+          "sales": "Closing Shift",
+          "minRcmd": "4",
+          "nonSmooth": "4",
+          "rcmd": "4"
+        },
+        "Tue": {
+          "sales": "Closing Shift",
+          "minRcmd": "4",
+          "nonSmooth": "4",
+          "rcmd": "4"
+        },
+        "Wed": {
+          "sales": "Closing Shift",
+          "minRcmd": "4",
+          "nonSmooth": "4",
+          "rcmd": "4"
+        },
+        "Thu": {
+          "sales": "Closing Shift",
+          "minRcmd": "4",
+          "nonSmooth": "4",
+          "rcmd": "4"
+        },
+        "Fri": {
+          "sales": "Closing Shift",
+          "minRcmd": "4",
+          "nonSmooth": "4",
+          "rcmd": "4"
+        },
+        "Sat": {
+          "sales": "Closing Shift",
+          "minRcmd": "4",
+          "nonSmooth": "4",
+          "rcmd": "4"
+        }
+      }
+    }
+  ],
+  "summary": {
+    "Sun": {
+      "totalSales": 7500,
+      "avgRcmd": "5.0",
+      "maxRcmd": 7,
+      "count": 28
+    },
+    "Mon": {
+      "totalSales": 6998,
+      "avgRcmd": "4.8",
+      "maxRcmd": 6,
+      "count": 28
+    },
+    "Tue": {
+      "totalSales": 8889,
+      "avgRcmd": "5.5",
+      "maxRcmd": 8,
+      "count": 28
+    },
+    "Wed": {
+      "totalSales": 8887,
+      "avgRcmd": "5.7",
+      "maxRcmd": 8,
+      "count": 28
+    },
+    "Thu": {
+      "totalSales": 8888,
+      "avgRcmd": "5.6",
+      "maxRcmd": 8,
+      "count": 28
+    },
+    "Fri": {
+      "totalSales": 8889,
+      "avgRcmd": "5.5",
+      "maxRcmd": 8,
+      "count": 28
+    },
+    "Sat": {
+      "totalSales": 8891,
+      "avgRcmd": "5.5",
+      "maxRcmd": 7,
+      "count": 28
+    }
+  }
+}
