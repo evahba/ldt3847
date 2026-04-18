@@ -609,7 +609,7 @@ export default function Home() {
                             </td>
                             <td className="px-4 py-2.5 text-right whitespace-nowrap">
                               <span className={`text-xs font-bold ${s.color}`}>{s.value}</span>
-                              <span className="text-neutral-500 text-[10px] ml-1.5">{s.sub}</span>
+                              <span className="text-white/60 text-[10px] ml-1.5">{s.sub}</span>
                             </td>
                           </tr>
                         ))}
