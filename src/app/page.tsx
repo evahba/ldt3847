@@ -227,6 +227,25 @@ export default function Home() {
     return grouped;
   }, [computedItems, interval]);
 
+  // Daily headcount summary: sum all 30-min slot values / 2 (staff-hours per day)
+  const daySummary = useMemo(() => {
+    const result: Record<string, { min: number; nonSmooth: number; rcmd: number }> = {};
+    for (const day of days) {
+      let sumMin = 0, sumNS = 0, sumRcmd = 0;
+      for (const item of computedItems) {
+        sumMin += item.days[day].minRcmd || 0;
+        sumNS += item.days[day].nonSmooth || 0;
+        sumRcmd += item.days[day].rcmd || 0;
+      }
+      result[day] = {
+        min: Math.round((sumMin / 2) * 10) / 10,
+        nonSmooth: Math.round((sumNS / 2) * 10) / 10,
+        rcmd: Math.round((sumRcmd / 2) * 10) / 10,
+      };
+    }
+    return result;
+  }, [computedItems]);
+
   // Stats derived from computed data
   const totalSales = useMemo(() =>
     days.reduce((sum, day) =>
@@ -414,6 +433,15 @@ export default function Home() {
                         );
                       })}
                     </tbody>
+                    <tfoot>
+                      <tr className="border-t border-neutral-700 bg-black/30">
+                        <td className="px-4 py-2 text-[10px] font-bold text-neutral-400 uppercase tracking-wider">Staff Hrs</td>
+                        <td className="px-4 py-2 text-center text-[10px] text-neutral-600">sum÷2</td>
+                        <td className="px-4 py-2 text-center text-neutral-400 font-semibold text-[10px]">{daySummary[day].min}</td>
+                        <td className="px-4 py-2 text-center text-neutral-300 font-semibold text-[10px]">{daySummary[day].nonSmooth}</td>
+                        <td className="px-4 py-2 text-center text-emerald-400 font-bold text-[10px] bg-white/5">{daySummary[day].rcmd}</td>
+                      </tr>
+                    </tfoot>
                   </table>
                   </div>
                 </motion.div>
@@ -498,6 +526,21 @@ export default function Home() {
                       );
                     })}
                   </tbody>
+                  <tfoot>
+                    <tr className="border-t border-neutral-700 bg-black/30">
+                      <td className="px-4 py-2 text-[10px] font-bold text-neutral-400 uppercase tracking-wider">Staff Hrs</td>
+                      <td className="px-4 py-2 text-center text-[10px] text-neutral-600">avg÷2</td>
+                      <td className="px-4 py-2 text-center text-neutral-400 font-semibold text-[10px]">
+                        {Math.round((days.reduce((s, d) => s + daySummary[d].min, 0) / days.length) * 10) / 10}
+                      </td>
+                      <td className="px-4 py-2 text-center text-neutral-300 font-semibold text-[10px]">
+                        {Math.round((days.reduce((s, d) => s + daySummary[d].nonSmooth, 0) / days.length) * 10) / 10}
+                      </td>
+                      <td className="px-4 py-2 text-center text-emerald-400 font-bold text-[10px] bg-white/5">
+                        {Math.round((days.reduce((s, d) => s + daySummary[d].rcmd, 0) / days.length) * 10) / 10}
+                      </td>
+                    </tr>
+                  </tfoot>
                 </table>
                 </div>
               </motion.div>
@@ -742,6 +785,18 @@ export default function Home() {
                       </React.Fragment>
                     );
                   })}
+                </tr>
+                <tr className="border-t border-neutral-700 bg-black/30">
+                  <td className="p-3 text-[10px] font-bold text-neutral-400 uppercase tracking-wider whitespace-nowrap sticky left-0 z-10 bg-neutral-950">Staff Hrs</td>
+                  <td className="p-3 text-[10px] text-neutral-600 whitespace-nowrap sticky left-[100px] z-10 bg-neutral-950">sum÷2</td>
+                  {days.map((day) => (
+                    <React.Fragment key={day}>
+                      <td className="px-3 py-2 text-center border-l border-neutral-800 whitespace-nowrap"></td>
+                      <td className="px-3 py-2 text-center text-neutral-400 font-semibold text-[10px] whitespace-nowrap">{daySummary[day].min}</td>
+                      <td className="px-3 py-2 text-center text-neutral-300 font-semibold text-[10px] whitespace-nowrap">{daySummary[day].nonSmooth}</td>
+                      <td className="px-3 py-2 text-center text-emerald-400 font-bold text-[10px] bg-white/5 whitespace-nowrap">{daySummary[day].rcmd}</td>
+                    </React.Fragment>
+                  ))}
                 </tr>
               </tfoot>
             </table>
