@@ -608,8 +608,8 @@ export default function Home() {
                               <span className={`px-2 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-tighter border ${s.bg} ${s.color}`}>{s.label}</span>
                             </td>
                             <td className="px-4 py-2.5 text-right whitespace-nowrap">
-                              <span className="text-xs font-bold text-white">{s.value}</span>
-                              <span className="text-white/50 text-[10px] ml-1.5">{s.sub}</span>
+                              <span className={`text-xs font-bold ${s.color}`}>{s.value}</span>
+                              <span className="text-neutral-500 text-[10px] ml-1.5">{s.sub}</span>
                             </td>
                           </tr>
                         ))}
