@@ -361,14 +361,15 @@ export default function Home() {
                       ${(weeklyTargets[day] ?? 0).toLocaleString()}
                     </button>
                   </div>
-                  <table className="w-full text-left border-collapse">
+                  <div className="overflow-x-auto">
+                  <table className="w-full text-left border-collapse min-w-[300px]">
                     <thead>
                       <tr className="bg-white/[0.02] border-b border-neutral-800">
-                        <th className="px-4 py-2 text-neutral-500 text-[10px] font-semibold uppercase tracking-wider">Day Part</th>
-                        <th className="px-4 py-2 text-center text-neutral-500 text-[10px] font-semibold uppercase tracking-wider">Sales</th>
-                        <th className="px-4 py-2 text-center text-neutral-500 text-[10px] font-semibold uppercase tracking-wider">Min</th>
-                        <th className="px-4 py-2 text-center text-neutral-500 text-[10px] font-semibold uppercase tracking-wider">N-Smooth</th>
-                        <th className="px-4 py-2 text-center text-neutral-500 text-[10px] font-semibold uppercase tracking-wider bg-white/5">Rcmd</th>
+                        <th className="px-2 py-2 text-neutral-500 text-[10px] font-semibold uppercase tracking-wider">Day Part</th>
+                        <th className="px-2 py-2 text-center text-neutral-500 text-[10px] font-semibold uppercase tracking-wider">Sales</th>
+                        <th className="px-2 py-2 text-center text-neutral-500 text-[10px] font-semibold uppercase tracking-wider">Min</th>
+                        <th className="px-2 py-2 text-center text-neutral-500 text-[10px] font-semibold uppercase tracking-wider">N-Sm</th>
+                        <th className="px-2 py-2 text-center text-neutral-500 text-[10px] font-semibold uppercase tracking-wider bg-white/5">Rcmd</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -383,9 +384,9 @@ export default function Home() {
                             >
                               <td className="px-4 py-2.5 flex items-center gap-2">
                                 <span className={cn(
-                                  "text-neutral-500 transition-transform duration-200 text-[10px]",
+                                  "text-neutral-500 transition-transform duration-200 inline-block",
                                   isExpanded ? "rotate-90" : ""
-                                )}>▶</span>
+                                )} style={{fontStyle:"normal",fontFamily:"sans-serif",fontSize:"10px",lineHeight:1}}>&#x276F;</span>
                                 <span className={cn(
                                   "px-2 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-tighter",
                                   item.dayPart === "Breakfast" && "bg-orange-500/10 text-orange-400 border border-orange-500/20",
@@ -414,6 +415,7 @@ export default function Home() {
                       })}
                     </tbody>
                   </table>
+                  </div>
                 </motion.div>
               ))}
 
@@ -430,14 +432,15 @@ export default function Home() {
                     ${Math.round(days.reduce((s, d) => s + (weeklyTargets[d] ?? 0), 0) / days.length).toLocaleString()}
                   </span>
                 </div>
-                <table className="w-full text-left border-collapse">
+                <div className="overflow-x-auto">
+                <table className="w-full text-left border-collapse min-w-[300px]">
                   <thead>
                     <tr className="bg-white/[0.02] border-b border-neutral-700">
-                      <th className="px-4 py-2 text-neutral-500 text-[10px] font-semibold uppercase tracking-wider">Day Part</th>
-                      <th className="px-4 py-2 text-center text-neutral-500 text-[10px] font-semibold uppercase tracking-wider">Sales</th>
-                      <th className="px-4 py-2 text-center text-neutral-500 text-[10px] font-semibold uppercase tracking-wider">Min</th>
-                      <th className="px-4 py-2 text-center text-neutral-500 text-[10px] font-semibold uppercase tracking-wider">N-Smooth</th>
-                      <th className="px-4 py-2 text-center text-neutral-500 text-[10px] font-semibold uppercase tracking-wider bg-white/5">Rcmd</th>
+                      <th className="px-2 py-2 text-neutral-500 text-[10px] font-semibold uppercase tracking-wider">Day Part</th>
+                      <th className="px-2 py-2 text-center text-neutral-500 text-[10px] font-semibold uppercase tracking-wider">Sales</th>
+                      <th className="px-2 py-2 text-center text-neutral-500 text-[10px] font-semibold uppercase tracking-wider">Min</th>
+                      <th className="px-2 py-2 text-center text-neutral-500 text-[10px] font-semibold uppercase tracking-wider">N-Sm</th>
+                      <th className="px-2 py-2 text-center text-neutral-500 text-[10px] font-semibold uppercase tracking-wider bg-white/5">Rcmd</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -458,7 +461,7 @@ export default function Home() {
                             onClick={() => toggleDaypart("__avg__", item.dayPart)}
                           >
                             <td className="px-4 py-2.5 flex items-center gap-2">
-                              <span className={cn("text-neutral-500 transition-transform duration-200 text-[10px]", isExpanded && "rotate-90")}>▶</span>
+                              <span className={cn("text-neutral-500 transition-transform duration-200 inline-block", isExpanded && "rotate-90")} style={{fontStyle:"normal",fontFamily:"sans-serif",fontSize:"10px",lineHeight:1}}>&#x276F;</span>
                               <span className={cn(
                                 "px-2 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-tighter",
                                 item.dayPart === "Breakfast" && "bg-orange-500/10 text-orange-400 border border-orange-500/20",
@@ -496,6 +499,7 @@ export default function Home() {
                     })}
                   </tbody>
                 </table>
+                </div>
               </motion.div>
             </div>
           ) : (
