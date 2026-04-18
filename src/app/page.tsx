@@ -249,12 +249,8 @@ export default function Home() {
 
   // Stats derived from computed data
   const totalSales = useMemo(() =>
-    days.reduce((sum, day) =>
-      sum + computedItems.reduce((s, item) => {
-        const v = item.days[day].sales;
-        return s + (typeof v === "number" ? v : 0);
-      }, 0), 0),
-    [computedItems]);
+    days.reduce((sum, day) => sum + (weeklyTargets[day] ?? 0), 0),
+    [weeklyTargets]);
 
   const allRcmds = computedItems.flatMap((item) => days.map((d) => item.days[d].rcmd));
   const avgRcmd = allRcmds.length ? (allRcmds.reduce((a, b) => a + b, 0) / allRcmds.length).toFixed(1) : "0";
