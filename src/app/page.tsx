@@ -607,9 +607,9 @@ export default function Home() {
                             <td className="px-4 py-2.5">
                               <span className={`px-2 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-tighter border ${s.bg} ${s.color}`}>{s.label}</span>
                             </td>
-                            <td className="px-4 py-2.5 text-right">
-                              <div className={`text-xs font-bold ${s.color}`}>{s.value}</div>
-                              <div className="text-neutral-600 text-[10px]">{s.sub}</div>
+                            <td className="px-4 py-2.5 text-right whitespace-nowrap">
+                              <span className={`text-xs font-bold ${s.color}`}>{s.value}</span>
+                              <span className="text-neutral-600 text-[10px] ml-1.5">{s.sub}</span>
                             </td>
                           </tr>
                         ))}
