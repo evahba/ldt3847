@@ -600,17 +600,21 @@ export default function Home() {
                     <div className="px-5 py-3 border-b border-neutral-700">
                       <span className="text-white font-bold text-sm uppercase tracking-wider">Statistics</span>
                     </div>
-                    <div className="p-4 grid grid-cols-1 gap-3">
-                      {stats.map((s) => (
-                        <div key={s.label} className={`flex items-center justify-between rounded-lg border px-4 py-3 ${s.bg}`}>
-                          <div>
-                            <div className="text-neutral-400 text-[10px] uppercase tracking-wider font-semibold">{s.label}</div>
-                            <div className="text-neutral-500 text-[10px] mt-0.5">{s.sub}</div>
-                          </div>
-                          <div className={`text-base font-bold ${s.color}`}>{s.value}</div>
-                        </div>
-                      ))}
-                    </div>
+                    <table className="w-full text-left border-collapse">
+                      <tbody>
+                        {stats.map((s, i) => (
+                          <tr key={s.label} className={`border-b border-neutral-800/50 ${i === stats.length - 1 ? "border-b-0" : ""}`}>
+                            <td className="px-4 py-2.5">
+                              <span className={`px-2 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-tighter border ${s.bg} ${s.color}`}>{s.label}</span>
+                            </td>
+                            <td className="px-4 py-2.5 text-right">
+                              <div className={`text-xs font-bold ${s.color}`}>{s.value}</div>
+                              <div className="text-neutral-600 text-[10px]">{s.sub}</div>
+                            </td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
                   </motion.div>
                 );
               })()}
