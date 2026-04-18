@@ -501,6 +501,119 @@ export default function Home() {
                 </table>
                 </div>
               </motion.div>
+
+              {/* Statistics card */}
+              {(() => {
+                const daypartOrder = ["Breakfast", "Lunch", "Afternoon", "Dinner", "Evening"];
+
+                // Busiest day part by avg sales across all days
+                const dpSales = daypartOrder.map((dp) => {
+                  const rows = computedItems.filter((r) => r.dayPart === dp);
+                  const total = days.reduce((s, d) => s + rows.reduce((ss, r) => {
+                    const v = r.days[d].sales;
+                    return ss + (typeof v === "number" ? v : 0);
+                  }, 0), 0) / days.length;
+                  return { dp, total };
+                });
+                const busiestDaypart = dpSales.reduce((a, b) => b.total > a.total ? b : a);
+                const quietestDaypart = dpSales.reduce((a, b) => b.total < a.total ? b : a);
+
+                // Peak day by total sales
+                const daySales = days.map((d) => ({
+                  d,
+                  total: computedItems.reduce((s, r) => {
+                    const v = r.days[d].sales;
+                    return s + (typeof v === "number" ? v : 0);
+                  }, 0),
+                }));
+                const peakDay = daySales.reduce((a, b) => b.total > a.total ? b : a);
+
+                // Avg sales per headcount (labor efficiency) across all slots/days
+                let effNum = 0, effDen = 0;
+                for (const item of computedItems) {
+                  for (const d of days) {
+                    const v = item.days[d].sales;
+                    const rc = item.days[d].rcmd;
+                    if (typeof v === "number" && rc > 0) { effNum += v; effDen += rc; }
+                  }
+                }
+                const salesPerHead = effDen > 0 ? effNum / effDen : 0;
+
+                // Smoothing impact: slots where rcmd != nonSmooth
+                let smoothedCount = 0, totalSlots = 0;
+                for (const item of computedItems) {
+                  for (const d of days) {
+                    const { rcmd, nonSmooth } = item.days[d];
+                    if (rcmd !== undefined && nonSmooth !== undefined) {
+                      totalSlots++;
+                      if (rcmd !== nonSmooth) smoothedCount++;
+                    }
+                  }
+                }
+                const smoothPct = totalSlots > 0 ? Math.round((smoothedCount / totalSlots) * 100) : 0;
+
+                const stats = [
+                  {
+                    label: "Busiest Day Part",
+                    value: busiestDaypart.dp,
+                    sub: `$${Math.round(busiestDaypart.total).toLocaleString()} avg/day`,
+                    color: "text-orange-400",
+                    bg: "bg-orange-500/10 border-orange-500/20",
+                  },
+                  {
+                    label: "Peak Day",
+                    value: peakDay.d,
+                    sub: `$${Math.round(peakDay.total).toLocaleString()} total sales`,
+                    color: "text-emerald-400",
+                    bg: "bg-emerald-500/10 border-emerald-500/20",
+                  },
+                  {
+                    label: "Sales / Headcount",
+                    value: `$${Math.round(salesPerHead)}`,
+                    sub: "avg revenue per staff per slot",
+                    color: "text-blue-400",
+                    bg: "bg-blue-500/10 border-blue-500/20",
+                  },
+                  {
+                    label: "Smoothing Impact",
+                    value: `${smoothPct}%`,
+                    sub: `of slots adjusted by smoothing`,
+                    color: "text-purple-400",
+                    bg: "bg-purple-500/10 border-purple-500/20",
+                  },
+                  {
+                    label: "Quietest Day Part",
+                    value: quietestDaypart.dp,
+                    sub: `$${Math.round(quietestDaypart.total).toLocaleString()} avg/day`,
+                    color: "text-neutral-400",
+                    bg: "bg-neutral-500/10 border-neutral-500/20",
+                  },
+                ];
+
+                return (
+                  <motion.div
+                    initial={{ opacity: 0, y: 12 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.4 }}
+                    className="rounded-xl border border-neutral-700 bg-neutral-800/60 overflow-hidden"
+                  >
+                    <div className="px-5 py-3 border-b border-neutral-700">
+                      <span className="text-white font-bold text-sm uppercase tracking-wider">Statistics</span>
+                    </div>
+                    <div className="p-4 grid grid-cols-1 gap-3">
+                      {stats.map((s) => (
+                        <div key={s.label} className={`flex items-center justify-between rounded-lg border px-4 py-3 ${s.bg}`}>
+                          <div>
+                            <div className="text-neutral-400 text-[10px] uppercase tracking-wider font-semibold">{s.label}</div>
+                            <div className="text-neutral-500 text-[10px] mt-0.5">{s.sub}</div>
+                          </div>
+                          <div className={`text-base font-bold ${s.color}`}>{s.value}</div>
+                        </div>
+                      ))}
+                    </div>
+                  </motion.div>
+                );
+              })()}
             </div>
           ) : (
           <div className="overflow-x-auto">
